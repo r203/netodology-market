@@ -1,38 +1,73 @@
 .App {
-  text-align: center;
+  padding: 0 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrap {
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-size: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product_list {
   display: flex;
-  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  position: relative;
+  list-style: none;
+  border: 1px solid #7b7b7b;
+  border-radius: 10px;
+  width: calc(100% / 5 - 10px);
+  margin-right: 10px;
+  padding: 10px 20px;
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0 4px;
+  background: #fc5230;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.image {
+  height: 270px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 6px 0;
+  padding-right: 7px;
+  color: #2e2e2e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.old-price {
+  color: #7b7b7b;
+  position: relative;
 }
+
+.old-price:after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  border-top: 1px solid #7b7b7b;
+  width: 100%;
+  box-sizing: content-box;
+}
+
+.product-name {}
